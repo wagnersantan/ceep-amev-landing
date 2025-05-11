@@ -1,5 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Página carregada com sucesso!");
+
+    // Alternar menu responsivo
+    const menuToggle = document.querySelector("#menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
 });
 
 function mostrarCurso(cursoId) {
@@ -21,5 +29,4 @@ function mostrarCurso(cursoId) {
         cursoSelecionado.style.opacity = 1;
       }, 10);
     }
-  }
-  
+}

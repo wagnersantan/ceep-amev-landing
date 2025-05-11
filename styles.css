@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
@@ -50,6 +50,21 @@ body {
   border-radius: 5px;
 }
 
+/* Menu de Hambúrguer */
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.menu-toggle i {
+  font-size: 2rem;
+}
+
+/* Hero Section */
 .hero {
   background-image: url('hero-image.jpg');
   background-size: cover;
@@ -67,7 +82,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Filtro semitransparente */
+  background: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
 
@@ -81,9 +96,10 @@ body {
   margin-bottom: 2rem;
 }
 
+/* Botões */
 .btn {
   padding: 0.75rem 1.5rem;
-  background-color: #004d99;
+  background-color: var(--primary-color);
   color: white;
   border: none;
   border-radius: 5px;
@@ -116,7 +132,7 @@ section {
   border-radius: 10px;
   padding: 2rem;
   width: 100%;
-  max-width: 300px; /* Aumentar a largura das caixas */
+  max-width: 300px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -124,7 +140,7 @@ section {
 }
 
 .curso:hover {
-  transform: scale(1.05); /* Efeito de aumento suave */
+  transform: scale(1.05);
 }
 
 .curso img {
@@ -132,6 +148,7 @@ section {
   border-radius: 10px;
 }
 
+/* Tooltip */
 .tooltip {
   visibility: hidden;
   background-color: black;
@@ -154,6 +171,7 @@ section {
   transform: translateX(-50%) translateY(0);
 }
 
+/* Contato */
 .contato {
   background-color: #eef5fb;
   padding: 4rem 2rem;
@@ -234,6 +252,23 @@ footer {
     width: 100%;
     gap: 0.5rem;
     padding-top: 1rem;
+    display: none; /* Esconde o menu inicialmente */
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    top: 70px; /* Ajuste conforme necessário */
+    right: 0;
+    background-color: #004d99;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  .nav-links.active {
+    display: flex; /* Exibe o menu quando a classe 'active' for aplicada */
+    transform: translateX(0); /* Garantir que o menu se mova para sua posição */
+  }
+
+  .menu-toggle {
+    display: block;
   }
 
   .cursos-container {
