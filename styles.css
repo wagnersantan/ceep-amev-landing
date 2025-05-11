@@ -37,6 +37,17 @@ body {
   flex-wrap: wrap;
 }
 
+/* Remover os marcadores de lista */
+.nav-links ul {
+  list-style: none; /* Remove os pontinhos (bolinhas) */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block; /* Faz os itens ficarem na linha */
+}
+
 .nav-links a {
   color: white;
   text-decoration: none;
