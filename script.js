@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// Função para mostrar os detalhes do curso com transição suave
 function mostrarCurso(cursoId) {
     // Oculta todos os detalhes primeiro
     const detalhes = document.querySelectorAll('.curso-detalhes');
@@ -17,12 +18,12 @@ function mostrarCurso(cursoId) {
       detalhe.style.display = 'none';
       detalhe.style.opacity = 0;
     });
-  
+
     // Mostra o detalhe do curso selecionado com uma transição suave
     const cursoSelecionado = document.getElementById(`detalhe-${cursoId}`);
     if (cursoSelecionado) {
       cursoSelecionado.style.display = 'block';
-  
+
       // Adiciona um pequeno delay para permitir a transição
       setTimeout(() => {
         cursoSelecionado.style.transition = 'opacity 0.5s';

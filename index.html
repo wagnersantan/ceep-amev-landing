@@ -1,88 +1,105 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CEEP AMEV</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="favicon.ico" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceep AMEV Landing</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome para os ícones -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <nav class="navbar">
-      <h1><span class="ceep">CEEP</span> <span class="amev">AMEV</span></h1>
-      <!-- Botão para alternar o menu (agora com a estrutura sugerida) -->
-      <button id="menu-toggle" aria-label="Alternar menu">
-        <i class="fas fa-bars"></i> <!-- Ícone de menu hambúrguer -->
-      </button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#cursos">Cursos</a></li>
-        <li><a href="#informacoes">Informações</a></li>
-        <li><a href="#depoimentos">Depoimentos</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="navbar">
+        <h1>Ceep AMEV</h1>
+        <button id="menu-toggle" class="menu-toggle">
+            <i class="fa fa-bars"></i>
+        </button>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#informacoes">Informações</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <div class="hero-content">
-    <h2>Estude no CEEP AMEV e transforme seu futuro!</h2>
-    <p>Cursos técnicos gratuitos e com qualidade reconhecida em Segurança do Trabalho</p>
-    <a href="https://forms.gle/seulink" target="_blank" class="btn btn-destaque">
-      Quero me inscrever!
-    </a>
-  </div>
-
-  <section id="sobre">
-    <h2>Sobre o CEEP AMEV</h2>
-    <p>O Centro Estadual de Educação Profissional AMEV (CEEP AMEV) é referência em formação técnica no estado...</p>
-  </section>
-
-  <section id="cursos">
-    <h2>Nossos Cursos</h2>
-    <div class="cursos-container">
-      <div class="curso">
-        <i class="fas fa-hard-hat fa-2x"></i>
-        <h3>Segurança do Trabalho</h3>
-        <div class="tooltip">Curso técnico voltado à prevenção de acidentes e saúde no trabalho.</div>
-      </div>
-      <div class="curso">
-        <i class="fas fa-vial fa-2x"></i>
-        <h3>Técnico em Química</h3>
-        <div class="tooltip">Formação técnica para quem deseja atuar em laboratórios, indústrias químicas.</div>
-      </div>
-      <div class="curso">
-        <i class="fas fa-briefcase fa-2x"></i>
-        <h3>Técnico em Administração</h3>
-        <div class="tooltip">Capacita profissionais para atuar em setores administrativos.</div>
-      </div>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h2>Estude no CEEP AMEV e transforme seu futuro!</h2>
+            <p>Cursos técnicos gratuitos e com qualidade reconhecida em Segurança do Trabalho</p>
+            <a href="https://forms.gle/seulink" target="_blank" class="btn btn-destaque">
+                Quero me inscrever!
+            </a>
+        </div>
     </div>
-  </section>
 
-  <section id="informacoes">
-    <h2>Mais Informações</h2>
-    <p>Deseja conhecer mais detalhes sobre os nossos cursos técnicos?</p>
-    <div class="botao-download">
-      <a href="docs/cursos-ceep.pdf" download class="btn btn-secundario">
-        <i class="fas fa-file-download"></i> Baixar Informações dos Cursos (PDF)
-      </a>
-    </div>
-  </section>
+    <!-- Sobre Section -->
+    <section id="sobre">
+        <h2>Sobre o CEEP AMEV</h2>
+        <p>O Centro Estadual de Educação Profissional AMEV (CEEP AMEV) é referência em formação técnica no estado...</p>
+    </section>
 
-  <section id="depoimentos">
-    <h2>Depoimentos</h2>
-    <div class="depoimentos-container">
-      <blockquote>"Estudar no CEEP AMEV mudou minha vida!" - Ana, ex-aluna</blockquote>
-      <blockquote>"Professores excelentes e estrutura acolhedora." - João, aluno</blockquote>
-    </div>
-  </section>
+    <!-- Cursos Section -->
+    <section id="cursos">
+        <h2>Nossos Cursos</h2>
+        <div class="cursos-container">
+            <div class="curso">
+                <i class="fas fa-hard-hat fa-2x"></i>
+                <h3>Segurança do Trabalho</h3>
+                <div class="tooltip">Curso técnico voltado à prevenção de acidentes e saúde no trabalho.</div>
+            </div>
+            <div class="curso">
+                <i class="fas fa-vial fa-2x"></i>
+                <h3>Técnico em Química</h3>
+                <div class="tooltip">Formação técnica para quem deseja atuar em laboratórios, indústrias químicas.</div>
+            </div>
+            <div class="curso">
+                <i class="fas fa-briefcase fa-2x"></i>
+                <h3>Técnico em Administração</h3>
+                <div class="tooltip">Capacita profissionais para atuar em setores administrativos.</div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2025 CEEP AMEV - Todos os direitos reservados</p>
-  </footer>
+    <!-- Mais Informações Section -->
+    <section id="informacoes">
+        <h2>Mais Informações</h2>
+        <p>Deseja conhecer mais detalhes sobre os nossos cursos técnicos?</p>
+        <div class="botao-download">
+            <a href="docs/cursos-ceep.pdf" download class="btn btn-secundario">
+                <i class="fas fa-file-download"></i> Baixar Informações dos Cursos (PDF)
+            </a>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Depoimentos Section -->
+    <section id="depoimentos">
+        <h2>Depoimentos</h2>
+        <div class="depoimentos-container">
+            <blockquote>"Estudar no CEEP AMEV mudou minha vida!" - Ana, ex-aluna</blockquote>
+            <blockquote>"Professores excelentes e estrutura acolhedora." - João, aluno</blockquote>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <h2>Entre em Contato</h2>
+        <p>Se tiver dúvidas ou quiser mais informações, entre em contato conosco!</p>
+        <div id="form-contato">
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu email" required>
+            <textarea placeholder="Sua mensagem" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 CEEP AMEV - Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
 </html>
