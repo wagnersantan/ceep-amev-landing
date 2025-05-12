@@ -274,9 +274,10 @@ footer {
     border-radius: 5px;
   }
 
+  /* Exibe o menu quando a classe 'active' for aplicada */
   .nav-links.active {
-    display: flex; /* Exibe o menu quando a classe 'active' for aplicada */
-    transform: translateX(0); /* Garantir que o menu se mova para sua posição */
+    display: flex;
+    transform: translateX(0);
   }
 
   .menu-toggle {

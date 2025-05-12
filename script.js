@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Página carregada com sucesso!");
+    console.log("Página carregada com sucesso!"); // Verifica se o JavaScript está sendo carregado corretamente
 
     // Alternar menu responsivo
     const menuToggle = document.querySelector("#menu-toggle");
@@ -33,3 +33,4 @@ function mostrarCurso(cursoId) {
         }, 10);
     }
 }
+
