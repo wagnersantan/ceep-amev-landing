@@ -62,15 +62,18 @@ body {
 }
 
 /* Menu de Hambúrguer */
-#menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: white;
-}
 
+
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+}
 /* Icone do menu hambúrguer */
 .menu-toggle i {
   font-size: 2rem;
