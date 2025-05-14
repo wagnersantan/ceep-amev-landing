@@ -1,0 +1,81 @@
+/* Main Section específico de segurança */
+.curso-detalhe {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #004d99;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+h1 i {
+    margin-right: 10px;
+}
+
+/* Modalidades Ofertadas */
+.modalidades-ofertadas {
+    margin-bottom: 2rem;
+}
+
+.modalidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.modalidade {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.modalidade:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modalidade h3 {
+    font-size: 1.5rem;
+    color: #004d99;
+    margin-bottom: 1rem;
+}
+
+.modalidade p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Lista de Pré-requisitos e Perfil Profissional */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
+
+h2 {
+    color: #004d99;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Seções */
+.pre-requisitos, .perfil-profissional, .campo-atuacao {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
